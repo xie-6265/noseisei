@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noseisei - seisei is best!</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #F5F3FF, #FFFFFF);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.5s ease-out;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #581C87;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #7E22CE;
+        }
+
+        /* Card grid */
+        .card-grid {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            gap: 1.5rem;
+            padding: 0 1rem;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.5s ease-out 0.2s both;
+        }
+
+        @media (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Card styles */
+        .card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid #F3E8FF;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #E9D5FF;
+            transform: translateY(-2px);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.875rem;
+            color: #6B7280;
+            margin-bottom: 1rem;
+        }
+
+        .card-content {
+            font-size: 0.875rem;
+            color: #4B5563;
+        }
+
+        /* Button styles */
+        .button-container {
+            animation: fadeIn 0.5s ease-out 0.4s both;
+        }
+
+        .button {
+            background-color: #2563EB;
+            color: white;
+            border: none;
+            border-radius: 9999px;
+            padding: 1.5rem 2rem;
+            font-size: 1.125rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #1D4ED8;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #7E22CE;
+            animation: fadeIn 0.5s ease-out 0.6s both;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">
+            noseisei
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3m0 12v3M9 3h6M9 21h6M5.5 5.5l2 2m9-2l-2 2m-9 9l2-2m9 2l-2-2M3 9v6M21 9v6"/>
+            </svg>
+        </h1>
+        <p class="subtitle">seisei is best!</p>
+    </header>
+
+    <div class="card-grid">
+        <div class="card">
+            <h2 class="card-title">快速</h2>
+            <p class="card-subtitle">Lightning-fast performance</p>
+            <p class="card-content">Experience seamless and responsive interactions with our optimized platform.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">安全</h2>
+            <p class="card-subtitle">Enhanced Security</p>
+            <p class="card-content">Your data is protected with state-of-the-art security measures.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">简单</h2>
+            <p class="card-subtitle">User-Friendly</p>
+            <p class="card-content">Intuitive interface designed for the best user experience.</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='https://zxc.noseisei.com'">
+            进入系统
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14m-7-7l7 7-7 7"/>
+            </svg>
+        </button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> noseisei. All rights reserved.</p>
+    </footer>
+</body>
+</html>
