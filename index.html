@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>noseisei - seisei is best!</title>
+    <title>noseisei - 生成最好！</title>
     <style>
-        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -13,27 +12,27 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(to bottom, #F5F3FF, #FFFFFF);
+            background: linear-gradient(135deg, #F5F3FF, #FFFFFF);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
+            padding: 2rem;
+            color: #333;
         }
 
-        /* Header styles */
         .header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             animation: fadeInDown 0.5s ease-out;
         }
 
         .title {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: bold;
-            color: #581C87;
+            color: #4C1D95;
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
@@ -42,18 +41,17 @@
         }
 
         .subtitle {
-            font-size: 1.25rem;
-            color: #7E22CE;
+            font-size: 1.5rem;
+            color: #6D28D9;
         }
 
-        /* Card grid */
         .card-grid {
             width: 100%;
             max-width: 1200px;
             display: grid;
-            gap: 1.5rem;
+            gap: 2rem;
             padding: 0 1rem;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
             animation: fadeInUp 0.5s ease-out 0.2s both;
         }
 
@@ -63,72 +61,71 @@
             }
         }
 
-        /* Card styles */
         .card {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
-            border: 1px solid #F3E8FF;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            transition: all 0.2s ease;
+            border: 1px solid #E9D5FF;
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .card:hover {
-            border-color: #E9D5FF;
-            transform: translateY(-2px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
         .card-title {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            color: #4C1D95;
         }
 
         .card-subtitle {
-            font-size: 0.875rem;
-            color: #6B7280;
+            font-size: 1rem;
+            color: #6D28D9;
             margin-bottom: 1rem;
         }
 
         .card-content {
-            font-size: 0.875rem;
+            font-size: 1rem;
             color: #4B5563;
+            line-height: 1.6;
         }
 
-        /* Button styles */
         .button-container {
             animation: fadeIn 0.5s ease-out 0.4s both;
         }
 
         .button {
-            background-color: #2563EB;
+            background-color: #4C1D95;
             color: white;
             border: none;
             border-radius: 9999px;
-            padding: 1.5rem 2rem;
-            font-size: 1.125rem;
+            padding: 1.5rem 3rem;
+            font-size: 1.25rem;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .button:hover {
-            background-color: #1D4ED8;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background-color: #6D28D9;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer styles */
         .footer {
             margin-top: 4rem;
             text-align: center;
-            color: #7E22CE;
+            color: #6D28D9;
             animation: fadeIn 0.5s ease-out 0.6s both;
         }
 
-        /* Animations */
         @keyframes fadeInDown {
             from {
                 opacity: 0;
@@ -165,44 +162,44 @@
     <header class="header">
         <h1 class="title">
             noseisei
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7E22CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6D28D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 3v3m0 12v3M9 3h6M9 21h6M5.5 5.5l2 2m9-2l-2 2m-9 9l2-2m9 2l-2-2M3 9v6M21 9v6"/>
             </svg>
         </h1>
-        <p class="subtitle">seisei is best!</p>
+        <p class="subtitle">生成最好！</p>
     </header>
 
     <div class="card-grid">
         <div class="card">
             <h2 class="card-title">快速</h2>
-            <p class="card-subtitle">Lightning-fast performance</p>
-            <p class="card-content">Experience seamless and responsive interactions with our optimized platform.</p>
+            <p class="card-subtitle">闪电般的性能</p>
+            <p class="card-content">体验我们优化平台的无缝和响应式交互。</p>
         </div>
 
         <div class="card">
             <h2 class="card-title">安全</h2>
-            <p class="card-subtitle">Enhanced Security</p>
-            <p class="card-content">Your data is protected with state-of-the-art security measures.</p>
+            <p class="card-subtitle">增强的安全性</p>
+            <p class="card-content">您的数据受到最先进的安全措施保护。</p>
         </div>
 
         <div class="card">
             <h2 class="card-title">简单</h2>
-            <p class="card-subtitle">User-Friendly</p>
-            <p class="card-content">Intuitive interface designed for the best user experience.</p>
+            <p class="card-subtitle">用户友好</p>
+            <p class="card-content">为最佳用户体验设计的直观界面。</p>
         </div>
     </div>
 
     <div class="button-container">
         <button class="button" onclick="window.location.href='https://zxc.noseisei.com'">
             进入系统
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14m-7-7l7 7-7 7"/>
             </svg>
         </button>
     </div>
 
     <footer class="footer">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> noseisei. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> noseisei. 保留所有权利。</p>
     </footer>
 </body>
 </html>
